@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Privacy Policy · Verdant Palm Management LLC</title>
+  <style>
+    body{margin:0;font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#111;background:#fff}
+    .wrap{max-width:860px;margin:0 auto;padding:28px 20px}
+    a{color:inherit}
+    header,footer{border-bottom:1px solid #e6e6e6}
+    footer{border-top:1px solid #e6e6e6;border-bottom:none}
+  </style>
+</head>
+<body>
+  <header><div class="wrap"><a href="/">← Back</a></div></header>
+  <main class="wrap">
+    <h1>Privacy Policy</h1>
+    <p><em>Effective date:</em> <span id="d"></span></p>
+    <p>This site collects minimal technical data (e.g., standard server logs). If you contact us, we will use your information solely to respond. We do not sell personal information. For inquiries, email <a href="mailto:privacy@verdantpalm.com">privacy@verdantpalm.com</a>.</p>
+  </main>
+  <footer><div class="wrap">© <span id="y"></span> Verdant Palm Management LLC</div></footer>
+  <script>
+    const now=new Date();document.getElementById('y').textContent=now.getFullYear();
+    document.getElementById('d').textContent=now.toLocaleDateString();
+  </script>
+</body>
+</html>
