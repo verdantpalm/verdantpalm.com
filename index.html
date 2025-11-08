@@ -4,29 +4,49 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Verdant Palm Management LLC</title>
-  <meta name="description" content="Verdant Palm Management LLC is a Wyoming holding and management company overseeing investments and operating initiatives across technology, energy, and digital infrastructure.">
+  <meta name="description" content="Verdant Palm Management LLC is a privately held Wyoming company building and supporting ventures across energy, technology, and digital infrastructure.">
+  <link rel="icon" href="/favicon.ico">
+  <meta name="theme-color" content="#111111">
 
-  <!-- Minimal, built-in CSS -->
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Verdant Palm Management LLC">
+  <meta property="og:description" content="Building and supporting ventures that shape resilient, technology-driven futures.">
+  <meta property="og:url" content="https://verdantpalm.com/">
+  <meta property="og:image" content="https://verdantpalm.com/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Verdant Palm Management LLC">
+  <meta name="twitter:description" content="Building and supporting ventures that shape resilient, technology-driven futures.">
+
+  <!-- Minimal, clean CSS -->
   <style>
-    :root { --fg:#111; --muted:#555; --bg:#fff; --line:#e6e6e6; }
-    *{box-sizing:border-box} body{margin:0;font:16px/1.55 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;color:var(--fg);background:var(--bg)}
-    a{color:inherit} a.button{display:inline-block;padding:12px 18px;border:1px solid var(--fg);text-decoration:none;border-radius:6px}
-    header{padding:28px 20px;border-bottom:1px solid var(--line)}
-    .wrap{max-width:920px;margin:0 auto;padding:0 20px}
-    nav a{margin-right:16px;text-decoration:none;color:var(--muted)}
-    .hero{padding:60px 0 30px}
-    h1{font-size:28px;margin:0 0 8px}
-    h2{font-size:22px;margin:32px 0 12px}
-    p{margin:0 0 14px}
-    ul{margin:0 0 14px 20px}
-    .grid{display:grid;grid-template-columns:1fr;gap:18px}
-    @media (min-width:760px){ .grid-2{grid-template-columns:1fr 1fr}}
-    .card{border:1px solid var(--line);border-radius:8px;padding:16px}
-    footer{margin-top:40px;border-top:1px solid var(--line);padding:20px 0;color:var(--muted)}
+    :root{
+      --fg:#111; --bg:#fff; --muted:#555; --line:#eaeaea;
+      --accent:#0e0e0e; --radius:10px; --pad:22px; --max:980px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}
+    a.button{display:inline-block;padding:12px 18px;border:1px solid var(--fg);border-radius:8px}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+    header{position:sticky;top:0;background:rgba(255,255,255,.9);backdrop-filter:saturate(1.2) blur(6px);border-bottom:1px solid var(--line)}
+    .nav{display:flex;gap:18px;align-items:center;justify-content:flex-start;padding:12px 0}
+    .brand{font-weight:600;letter-spacing:.2px}
+    .nav a.link{color:var(--muted)}
+    .hero{padding:64px 0 26px}
+    h1{font-size:30px;line-height:1.25;margin:0 0 10px}
+    h2{font-size:22px;margin:28px 0 12px}
+    p{margin:0 0 14px;color:var(--fg)}
     .muted{color:var(--muted)}
+    .grid{display:grid;gap:18px}
+    @media (min-width:820px){ .grid.cols-2{grid-template-columns:1fr 1fr} }
+    .card{border:1px solid var(--line);border-radius:var(--radius);padding:var(--pad)}
+    .section{padding:26px 0}
+    footer{margin-top:36px;border-top:1px solid var(--line);padding:16px 0;color:var(--muted)}
+    .footer-links{display:flex;gap:14px;flex-wrap:wrap}
   </style>
 
-  <!-- Organization schema (good optics for due diligence) -->
+  <!-- JSON-LD Organization -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -34,100 +54,94 @@
     "name":"Verdant Palm Management LLC",
     "url":"https://verdantpalm.com",
     "email":"info@verdantpalm.com",
-    "address":{
-      "@type":"PostalAddress",
-      "addressCountry":"US",
-      "addressRegion":"WY"
-    }
+    "address":{"@type":"PostalAddress","addressCountry":"US","addressRegion":"WY"}
   }
   </script>
 </head>
 <body>
+  <!-- Header / Nav -->
   <header>
-    <div class="wrap">
-      <nav>
-        <a href="#about">About</a>
-        <a href="#scope">Scope</a>
-        <a href="#structure">Structure</a>
-        <a href="#management">Management</a>
-        <a href="#compliance">Compliance</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    <div class="wrap nav">
+      <div class="brand">Verdant Palm Management LLC</div>
+      <a class="link" href="#about">About</a>
+      <a class="link" href="#focus">Focus</a>
+      <a class="link" href="#approach">Approach</a>
+      <a class="link" href="#governance">Governance</a>
+      <a class="link" href="#contact">Contact</a>
     </div>
   </header>
 
+  <!-- Hero -->
   <main class="wrap">
     <section class="hero">
-      <h1>Verdant Palm Management LLC</h1>
-      <p class="muted">A Wyoming holding and management company overseeing investments and operating initiatives across technology, energy, and digital infrastructure.</p>
-      <p><a class="button" href="#contact">Contact</a></p>
+      <h1>Building and supporting ventures that shape resilient, technology-driven futures.</h1>
+      <p class="muted">Verdant Palm Management LLC is a privately held Wyoming company focused on developing and guiding projects across energy, technology, and digital infrastructure. We take a long-view—combining strategic management, capital deployment, and operational expertise to cultivate durable value.</p>
+      <p style="margin-top:14px"><a class="button" href="#contact">Get in touch</a></p>
     </section>
 
-    <section id="about">
+    <!-- About -->
+    <section id="about" class="section">
       <h2>About</h2>
-      <p>Verdant Palm Management LLC is a Wyoming-organized holding and management company. We steward capital, govern subsidiaries, and provide strategic oversight across select ventures in technology, energy, and digital infrastructure. Our mandate prioritizes risk management, compliance, and long-horizon value creation.</p>
+      <p>Verdant Palm Management LLC was founded on the belief that modern enterprises thrive where sound governance meets creative execution. We align financial stewardship, technical insight, and disciplined operations to move promising ideas from concept to scale.</p>
+      <p>We support initiatives that balance innovation with tangible, real-world impact.</p>
     </section>
 
-    <section id="scope">
-      <h2>Scope of Activities</h2>
-      <div class="grid grid-2">
+    <!-- Focus Areas -->
+    <section id="focus" class="section">
+      <h2>Focus Areas</h2>
+      <div class="grid cols-2">
         <div class="card">
-          <ul>
-            <li>Capital allocation and treasury management (long-term positions)</li>
-            <li>Corporate governance and inter-company controls</li>
-            <li>Strategic planning and institutional relationships</li>
-          </ul>
+          <h3 style="margin:0 0 8px;font-size:18px">Strategic Management</h3>
+          <p class="muted">Leadership and coordination across emerging ventures, from early design to steady-state operations.</p>
         </div>
         <div class="card">
-          <ul>
-            <li>IP and data-room stewardship for portfolio initiatives</li>
-            <li>Oversight of operating agreements and compliance frameworks</li>
-            <li>Internal services provided via operating affiliates</li>
-          </ul>
+          <h3 style="margin:0 0 8px;font-size:18px">Capital &amp; Treasury</h3>
+          <p class="muted">Proprietary holdings and long-term assets managed for sustainability and risk control.</p>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 8px;font-size:18px">Technology &amp; Infrastructure</h3>
+          <p class="muted">Projects that improve energy efficiency, digital connectivity, and operational resilience.</p>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 8px;font-size:18px">Advisory &amp; Partnerships</h3>
+          <p class="muted">Quiet collaboration with founders, investors, and institutions to build aligned growth strategies.</p>
         </div>
       </div>
     </section>
 
-    <section id="structure">
-      <h2>Corporate Structure</h2>
-      <p><strong>Parent:</strong> Verdant Palm Management LLC (holding &amp; governance)</p>
-      <p><strong>Operating Affiliate:</strong> Verdant Palm Solutions LLC — provides management and operational services for select projects.</p>
-      <p><strong>Independent Venture (not owned):</strong> Freedom to Transact LLC (Oklahoma) — separate company, occasionally a strategic partner.</p>
+    <!-- Approach -->
+    <section id="approach" class="section">
+      <h2>Approach</h2>
+      <p>Pragmatic and principle-driven. We pursue opportunities where innovation strengthens communities and where long-term value creation outlasts cycles. Each engagement is handled discreetly, guided by governance and data-informed decision-making.</p>
     </section>
 
-    <section id="management">
-      <h2>Management</h2>
-      <div class="card">
-        <p><strong>Matthew Wolfson — Managing Member</strong><br>
-        Operator and strategist focused on technology, energy, and digital asset infrastructure. Experienced in multi-entity governance, operational rollout, and partner engagement.</p>
-      </div>
-      <!-- Add additional advisors/operators here as new cards -->
+    <!-- Governance (subtle compliance) -->
+    <section id="governance" class="section">
+      <h2>Governance &amp; Integrity</h2>
+      <p>Verdant Palm Management LLC maintains good standing in Wyoming and works with regulated financial partners. We uphold internal standards for transparency, security, and counterparty diligence appropriate to a modern management company. This site is informational and does not constitute an investment solicitation.</p>
     </section>
 
-    <section id="compliance">
-      <h2>Compliance &amp; Governance</h2>
-      <ul>
-        <li><strong>Legal:</strong> Verdant Palm Management LLC is formed in Wyoming and maintains good standing.</li>
-        <li><strong>Banking:</strong> U.S. business banking with KYC/AML-compliant institutions.</li>
-        <li><strong>Risk &amp; Controls:</strong> Internal procedures for counterparty due diligence, segregation of duties, and treasury approvals.</li>
-        <li><strong>Digital Assets:</strong> Any digital asset activity is conducted in accordance with applicable U.S. laws and exchange policies; assets are held for long-term treasury and strategic purposes.</li>
-        <li><strong>No Public Solicitation:</strong> This website is informational and does not constitute an offer to sell securities or solicit investments.</li>
-      </ul>
-    </section>
-
-    <section id="contact">
+    <!-- Contact -->
+    <section id="contact" class="section">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:info@verdantpalm.com">info@verdantpalm.com</a></p>
-      <p>Mailing Address: [WY mailing address]</p>
+      <p><strong>General Inquiries</strong><br>
+        <a href="mailto:info@verdantpalm.com">info@verdantpalm.com</a></p>
+      <p><strong>Mailing Address</strong><br>
+        <!-- Replace with your public address line -->
+        30 North Gould Street STE 11479<br>
+        Sheridan, WY 82801
+      </p>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
-    <div class="wrap">
-      <p>© <span id="y"></span> Verdant Palm Management LLC · Wyoming, USA · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
+    <div class="wrap footer-links">
+      <div>© <span id="y"></span> Verdant Palm Management LLC · Wyoming, USA</div>
+      <div><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></div>
     </div>
   </footer>
 
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
